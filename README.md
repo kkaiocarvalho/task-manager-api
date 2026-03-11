@@ -10,9 +10,9 @@ Cada tarefa possui os seguintes campos:
 
 - `id`: identificador gerado automaticamente
 - `title`: titulo da tarefa
-- `description`: descricao opcional
-- `done`: status de conclusao
-- `created_at`: data de criacao
+- `description`: descrição opcional
+- `done`: status de conclusão
+- `created_at`: data de criação
 
 ## Stack
 
@@ -43,13 +43,13 @@ python -m venv venv
 .\venv\Scripts\activate
 ```
 
-### 2. Instalar dependencias
+### 2. Instalar dependências
 
 ```powershell
 pip install -r requirements.txt
 ```
 
-### 3. Aplicar migracoes
+### 3. Aplicar migrções
 
 ```powershell
 python manage.py migrate
@@ -76,7 +76,7 @@ Base da API: `http://127.0.0.1:8000/api/tasks/`
 | `PATCH`  | `/api/tasks/{id}/` | Atualiza parcialmente         |
 | `DELETE` | `/api/tasks/{id}/` | Remove a tarefa               |
 
-Autenticacao do navegador da API do DRF:
+Autenticação do navegador da API do DRF:
 
 - `http://127.0.0.1:8000/api-auth/`
 
@@ -124,7 +124,7 @@ curl -X DELETE http://127.0.0.1:8000/api/tasks/1/
 
 ## Desenvolvimento
 
-Com o ambiente virtual ativado, estas checagens sao as mais uteis:
+Com o ambiente virtual ativado, estas checagens são as mais uteis:
 
 ```powershell
 python manage.py check
@@ -132,8 +132,8 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-## Observacoes
+## Observações
 
-- O projeto usa SQLite, entao nao exige configuracao extra para rodar localmente.
+- O projeto usa SQLite, então não exige configuração extra para rodar localmente.
 - O arquivo `db.sqlite3` deve ser tratado como artefato local de desenvolvimento.
-- O diretorio `venv/` e arquivos `__pycache__/` nao devem ser versionados.
+- O diretorio `venv/` e arquivos `__pycache__/` não devem ser versionados.
