@@ -1,4 +1,4 @@
-# Django API Crud Tasks
+# Task Manager Api
 
 API REST simples para gerenciamento de tarefas, construída com Django e Django REST Framework para fins de estudo.
 
